@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #656774;
+  background-color: #f5f9fe;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.col-md-4 {
+  padding: 0 15px !important;
+}
+
+.carousel__btn button:nth-child(1) {
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+  background: transparent;
+  padding: 13px 44px;
+  border: 2px solid #2a73dd;
+  color: #2a73dd;
+  box-shadow: 0 3px 6px 0px #c9d8f4;
+  transition: all 0.5s;
+}
+.carousel__btn button:nth-child(1):hover {
+  background: #2a73dd;
+  color: #fff;
+}
+.carousel__btn button:nth-child(2) {
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+  background: linear-gradient(135deg, #60a4f4, #2a73dd);
+  padding: 15.5px 46px;
+  border: none;
+  color: #fff;
+}
+.carousel__btn button:nth-child(2):hover {
+  opacity: 0.8;
+}
+
+.card__item button {
+  background-color: #f5f9fe;
+  font-size: 11px;
+  border: none;
+  color: #2a73dd;
+  padding: 8px 20px;
+  box-shadow: 3px 3px 4px 0px #c4c4c4;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.card__item button:hover {
+  box-shadow: inset 2px 2px 3px 0px #c4c4c4;
+}
+
+.card__item {
+  border: none;
+  padding: 30px;
+  background-color: #f5f9fe;
+  box-shadow: 6px 6px 12px 0 #e2ebfc, -6px -6px 12px 0 #fff;
+  margin-bottom: 30px;
+}
+.card__item img {
+  box-shadow: 6px 6px 12px 0px #e2ebfc;
+}
+.card__item__top {
+  justify-content: space-between;
+}
+.card__item__top .card__text h4, .card__item__top .card__price h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1d365e;
+}
+.card__item__bot {
+  justify-content: space-between;
+}
+.card__item__bot .list__icon i {
+  color: #f9d412;
+}
+
+.sidebarMini {
+  position: fixed;
+  top: 25%;
+  right: 0;
+  z-index: 100;
+  width: 300px;
+  background-color: #2196f3;
+  color: white;
+  transform: translateX(100%);
+  transition: all 0.5s;
+}
+.sidebarMini.isOpen {
+  transform: translateX(40%);
+}
+.sidebarMini__button {
+  padding: 5px 20px;
+  color: white;
+  position: fixed;
+  transform: translateX(-100%);
+  border: 1px solid #2196f3;
+  border-radius: 8px 0 0 8px;
+  background: #2196f3;
+}
+.sidebarMini__content {
+  width: 170px;
+  text-align: center;
+  padding: 20px;
+}
+.sidebarMini__content h2 {
+  font-size: 14px;
+}
+.sidebarMini__content__label {
+  width: 50px;
+  height: 25px;
+  position: relative;
+  margin: 0 10px;
+}
+.sidebarMini__content__label input {
+  display: none;
+}
+.sidebarMini__content__label input:checked ~ .slider::before {
+  transform: translateX(22px);
+}
+.sidebarMini__content__label .slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #2a73dd;
+  cursor: pointer;
+  border-radius: 35px;
+}
+.sidebarMini__content__label .slider::before {
+  content: "";
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  transition: all 0.5s;
+}
+
+header {
+  box-shadow: 0px 2px 4px 0px #e2ebfc;
+  background-color: #f5f9fe;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+header .phoneNav .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2a73dd;
+}
+header .phoneNav .nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1d365e;
+  padding: 1.8rem !important;
+}
+header .phoneNav .nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #2a73dd;
+  display: block;
+  transform: scaleX(0);
+  transition: all 0.2s;
+}
+header .phoneNav .nav-link.active, header .phoneNav .nav-link:hover {
+  color: #2a73dd;
+}
+header .phoneNav .nav-link.active::after, header .phoneNav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.carousel {
+  background-image: url(../../img/product-header-bg.jpg);
+  padding: 225px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+.carousel__left h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #2a73dd;
+}
+.carousel__left h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1d365e;
+  margin-bottom: 30px;
+}
+.carousel__left p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #656774;
+  margin-bottom: 25px;
+}
+.carousel__right img {
+  transform: scale(1.3);
+}
+
+.product {
+  padding: 5rem 0;
+}
+.product__title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #1d365e;
+  letter-spacing: 0.015rem;
+  margin-bottom: 5rem;
+}
+
+footer {
+  background: #2a73dd;
+  padding-bottom: 60px;
+}
+footer img {
+  margin-bottom: 60px;
+}
+footer .nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .nav-link:hover {
+  color: white;
+}
+footer .footer__light {
+  display: block;
+}
+footer .footer__dark {
+  display: none;
+}
+
+html.darkMode,
+body.darkMode {
+  background-color: #121212;
+}
+
+.darkMode .product__title {
+  color: #2196f3;
+}
+
+.darkMode header {
+  background-color: #353536;
+  box-shadow: none;
+}
+.darkMode header .navbar-brand {
+  color: #2196f3;
+}
+.darkMode header .navbar-toggler-icon {
+  color: #2196f3;
+}
+.darkMode header .phoneNav .nav-link {
+  color: #fff;
+}
+.darkMode header .phoneNav .nav-link:hover {
+  color: #2196f3;
+}
+.darkMode header .phoneNav .nav-link.active, .darkMode header .phoneNav .nav-link:hover {
+  color: #2196f3;
+}
+
+.darkMode .carousel {
+  background-image: url("../../img/product-header-bg-dark.jpg");
+}
+.darkMode .carousel p {
+  color: #fff;
+}
+.darkMode .carousel h1,
+.darkMode .carousel h3 {
+  color: #2196f3;
+}
+
+.darkMode .carousel__btn button:nth-child(1) {
+  box-shadow: none;
+}
+.darkMode .card__item button {
+  box-shadow: none;
+  background-color: transparent;
+  border: 2px solid #2a73dd;
+}
+.darkMode .card__item button:hover {
+  box-shadow: none;
+  background-color: #2a73dd;
+  color: #fff;
+}
+
+.darkMode .card__item {
+  box-shadow: none;
+  background-color: #212121;
+}
+.darkMode .card__item img {
+  box-shadow: none;
+}
+.darkMode .card__item .card__text h4,
+.darkMode .card__item .card__text p {
+  color: #2196f3;
+}
+
+.darkMode footer .footer__light {
+  display: none;
+}
+.darkMode footer .footer__dark {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

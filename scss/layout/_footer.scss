@@ -1,0 +1,19 @@
+footer {
+    background: $color-blue-2;
+    padding-bottom: $pd-7;
+    img {
+        margin-bottom: $mg-4;
+    }
+    .nav-link {
+        @include styleText($fs-1, $fw-2,$color-white-3);
+        &:hover {
+            color: white;
+        }
+    }
+    .footer__light {
+        display: block;
+    }
+    .footer__dark {
+        display: none;
+    }
+}

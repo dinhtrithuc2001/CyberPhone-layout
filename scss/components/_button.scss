@@ -1,0 +1,41 @@
+.carousel__btn{
+    button:nth-child(1){
+        @include styleBtnCarousel();
+        background: transparent;
+        padding: 13px 44px;
+        border: 2px solid #2a73dd;
+        color: #2a73dd;
+        box-shadow: 0 3px 6px 0px #c9d8f4;
+        transition: all .5s;
+        &:hover {
+            background: #2a73dd;
+            color: #fff;
+        }
+    }
+    button:nth-child(2){
+        @include styleBtnCarousel();
+        background: linear-gradient(135deg, #60a4f4, #2a73dd);
+        padding: 15.5px 46px;
+        border: none;
+        color: #fff;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+.card__item {
+    button{
+        background-color: $color-white-1;
+        font-size: 11px;
+        border: none;
+        color: #2a73dd;
+        padding: 8px 20px;
+        box-shadow: 3px 3px 4px 0px #c4c4c4;
+        border-radius: 5px;
+        transition: all 0.2s;
+
+        &:hover{
+            box-shadow: inset 2px 2px 3px 0px #c4c4c4;
+        }
+    }
+}

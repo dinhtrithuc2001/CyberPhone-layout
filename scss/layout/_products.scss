@@ -1,0 +1,10 @@
+.product {
+    padding: 5rem 0;
+    &__title {
+        font-weight: $fw-3;
+        font-size: $fs-6;
+        color: $color-blue-1;
+        letter-spacing: $ls-1;
+        margin-bottom: 5rem;
+    }
+}

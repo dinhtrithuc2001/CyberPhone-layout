@@ -1,0 +1,16 @@
+.darkMode{
+    .carousel__btn button:nth-child(1){
+        box-shadow:none;
+    }
+    
+    .card__item button{
+        box-shadow: none;
+        background-color: transparent;
+        border: $bd-1 solid $color-blue-2;
+        &:hover{
+            box-shadow: none;
+            background-color: $color-blue-2;
+            color: $color-white-3;
+        }
+    }
+}

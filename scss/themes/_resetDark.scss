@@ -1,0 +1,12 @@
+html,
+body {
+    &.darkMode{
+        background-color: $color-dark-2;
+    }
+   
+}
+.darkMode {  
+    .product__title {
+        color: $color-blue-4;
+    }
+}

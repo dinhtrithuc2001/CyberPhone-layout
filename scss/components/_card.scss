@@ -1,0 +1,24 @@
+.card__item {
+    border: none;
+    padding: 30px;
+    background-color: $color-white-1;
+    box-shadow: 6px 6px 12px 0 $color-white-2, -6px -6px 12px 0 #fff;
+    margin-bottom: 30px;
+    img {
+        box-shadow: 6px 6px 12px 0px $color-white-2;
+    }
+    &__top{
+        justify-content: space-between;
+        .card__text h4, .card__price h4 {
+            @include styleText($fs-7,$fw-3,$color-blue-1);
+        }
+    }
+    &__bot{
+        justify-content: space-between;
+        .list__icon {
+            i {
+                color: $color-yellow-1;
+            }
+        }
+    }
+}

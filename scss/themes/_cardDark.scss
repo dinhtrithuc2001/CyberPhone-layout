@@ -1,0 +1,13 @@
+.darkMode {
+    .card__item {
+        box-shadow: none;
+        background-color: $color-dark-4;
+        img {
+            box-shadow: none;
+        }
+        .card__text h4,
+        .card__text p {
+            color: $color-blue-4;
+        }
+    }
+}

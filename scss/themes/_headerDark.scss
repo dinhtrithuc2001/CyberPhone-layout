@@ -1,0 +1,24 @@
+.darkMode {
+    header {
+        background-color: $color-dark-3;
+        box-shadow: none;
+
+        .navbar-brand {
+            color: $color-blue-4;
+        }
+        .navbar-toggler-icon {
+            color: $color-blue-4;
+        }
+        .phoneNav  {
+            .nav-link {
+                color: $color-white-3;
+                &:hover {
+                    color: $color-blue-4;
+                }
+            }
+            .nav-link.active {
+                    color: $color-blue-4;
+            }
+        }
+    }
+}
